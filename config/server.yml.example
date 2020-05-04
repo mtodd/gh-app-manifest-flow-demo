@@ -1,0 +1,14 @@
+# This file configures 
+
+# github.com
+host: github.com
+apps_prefix: apps
+
+# GHES
+# host: github.example.com
+# api_prefix: /api/v3
+# apps_prefix: github-apps
+
+create_app_path: "/settings/apps/new",
+fetch_registration_api_path: "/app-manifests/%s/conversions",
+install_path: "/%s/%s/installations/new"

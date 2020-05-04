@@ -1,0 +1,41 @@
+# This file configures the GitHub App once created, and is generated when
+# creating a GitHub App from a manifest:
+# https://developer.github.com/apps/building-github-apps/creating-a-github-app/
+#
+# `manifest.yml` is used to configure the GitHub App for registration.
+
+app_id: Iv1.cb63bd1f010808ec
+app_secret: 54045fb00c25c538b0355cb1c0c07c936c55b824
+pem: |
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEpQIBAAKCAQEAulWnFm3MBMBMrq9f/gJIB/1QnGON0L2WEhuEr2bMO6D1lSXb
+  EEAXDnx6aHUj9Lw1h1+P4s3e0LoOPy5IHwQ00axS+w4e4Dg2atr9MQor85CEv8yg
+  Jaw/ugn3wXA+VS2s9UB2Oh1GzGId2sSzhE71Jp6c6LNlEj6JcWwSSK3JIxxSv2Wb
+  KILZeybzRTN7gJtYhC0BihcMJn1k+Az/zxF5vJAJTcTHXHPdMiPKMH5mT5+xpWwJ
+  7CIgrY9VECIF7GHpdK1hgIqcrQ+A+w/nkCc2D/vp7F7tpY0wNnOX2yf6kO3U9y7b
+  Uo7HEVn/Nmcis926Xi5V37bNiiLveyBYKdpqAQIDAQABAoIBAD8a0OqMpsKZKZ8j
+  b7wDo8do58r/AEFIY7GgNjB8/P/YxDMNzgHT4rsaNw53VYUF1I8TMxSZqjNAP6Dw
+  GKbAcu7rkHLL1nMTNoK7xXG9QyNKt1qJf1ci3bYwuAJ/8+w++stYWHHYBmkjdX7o
+  jO9rGiVJJFS+pKUoHr4V3p9Uk8Dau8VoytgPv2lOFEOtnhkL0EEbzMH/dh6TCIDW
+  bIxuBFa0sBgE0wVkl84Dl64mQm07dp6gD0Xc0fmfwzay6bG0fQUor0cKI09aFXVs
+  +Zuvp6nRPCanASBfe+q/GOy59jLpqDx5hQfHGjpeaKhdrENs+8btgJUuOQi1z6i6
+  n1Eoxs0CgYEA36C1Rjg3gA+88YUAgONOzIIIQ+fnrRqs1N7VGm/+xdvCG0YCV2tI
+  bzpMHk0wVo5xFFBglF/iokcCiLxzDH1fBObXrvaTJQ+x/oNKwFJ6uE622qLNkeZ3
+  Rx0QryycqFybHHnFZsHV0f7fI+SDAnW1uB8ZntZsE61vu5gfkHXker8CgYEA1U7r
+  A7eNFp/1Oo8lVjASY2uxE/r45Owg8X6DDEQiZEjIxr+aWxAS860hnsnB7UAX59SD
+  GpcxXcblySw5SX8WeCkNjVsoCI73VLqpv3AKUT1DSKjQmkHObiGTT1ZsvrgLZ0bM
+  90oqrBce7e1SPCpxDVTsX86tfYQtZwu/+CMmCz8CgYEA0cxHxLUA/JfHPx70NfcK
+  +joT3wE2DOS1uI/FhaQEdUOSe1vW3oS70/3xY4wvCUVhORmfQhQi3vOXoQiLNvB3
+  sHWRa4fQzDhJWOl7u6qljzvpuHx8N6Drzj+qY22LGzimHLTxSVIYc4aVeWrsreYY
+  scAbnTS0+FECPhCdrD2uOKkCgYEAhBDYcPSz5c4jhp4Z/8LDn8qNWFGKyDFqNBqg
+  CHgm0vA9XtBCQR8ynKwUpLtF1h5YrrBke5Igfm8m1ecLkPWec8b3HQ3TO3lIqKzp
+  bB1yRdooTlQ200rrBETFb9mSeoJ4jPjI7lJ9GQ83lxfYUmf0lsx9jNPplky/z4z2
+  zir04wECgYEA3mbG/tVIIkkKzf9uaBPMTbjgvAy2s0Chlb/zCljH7oTOhve2vAej
+  +6XuM7P77hlQZfYtxoIfXeC9luAx9mVTSOcUSD3PDfBB/39CBmJkQvv5ZHQj/Dff
+  evdcwL1g0VEdd0BnqBIgDrzP3CRMG8neFMi2ircL14WRzxGtTAetzoA=
+  -----END RSA PRIVATE KEY-----
+
+slug: my-test-app # used to 
+
+id: 13
+node_id: MDM6QXBwMTM=

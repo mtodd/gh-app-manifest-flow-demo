@@ -1,0 +1,21 @@
+# This file is used to configure the GitHub App for registration.
+
+name: My Test App
+url: https://example.com
+
+# installable on any account (public) or only on the account that owns the app
+public: true
+
+default_permissions:
+  issues: write
+
+# NOTE: integration registration requires hooks otherwise the request fails.
+hook_attributes:
+  url: https://example.com
+  active: false
+default_events:
+  - meta
+
+# These are set at runtime to point to the right endpoints.
+redirect_url: "" # post-registration endpoint
+setup_url: "" # post-installation endpoint
