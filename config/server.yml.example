@@ -1,14 +1,29 @@
-# This file configures 
+# This file configures the server
 
-# github.com
-host: github.com
-apps_prefix: apps
+# this server (for configuring URLs that GitHub redirects back to)
+# scheme: http
+# host: localhost:5000
 
-# GHES
-# host: github.example.com
-# api_prefix: /api/v3
-# apps_prefix: github-apps
+# github.com (default configuration for the server)
+# gh_scheme: https
+# gh_host: github.com
+# gh_api_host: api.github.com
+# apps_prefix: apps
+# gh_api_prefix: ""
+# gh_apps_prefix: apps
 
-create_app_path: "/settings/apps/new",
-fetch_registration_api_path: "/app-manifests/%s/conversions",
-install_path: "/%s/%s/installations/new"
+# GHES (use this if creating apps against GHES instances)
+# gh_host: github.example.com
+# gh_api_host: github.example.com
+# gh_scheme: https
+# gh_api_prefix: /api/v3
+# gh_apps_prefix: github-apps
+
+# create_app_path: /settings/apps/new
+# e.g. https://github.com/settings/apps/new
+
+# install_path: /%s/%s/installations/new
+# e.g. https://github.com/apps/:slug/installations/new
+
+# fetch_registration_api_path: /app-manifests/%s/conversions
+# e.g. https://api.github.com/app-manifests/:code/conversions

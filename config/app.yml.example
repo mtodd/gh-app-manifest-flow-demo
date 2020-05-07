@@ -35,7 +35,10 @@ pem: |
   evdcwL1g0VEdd0BnqBIgDrzP3CRMG8neFMi2ircL14WRzxGtTAetzoA=
   -----END RSA PRIVATE KEY-----
 
-slug: my-test-app # used to 
+slug: my-test-app # required to construct the installation URL
 
-id: 13
-node_id: MDM6QXBwMTM=
+id: 13 # required
+node_id: MDM6QXBwMTM= # used in GraphQL API requests.
+
+# This is set once the application is installed.
+installation_id: 6
