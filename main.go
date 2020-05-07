@@ -147,12 +147,8 @@ func registerCallbackHandler(w http.ResponseWriter, r *http.Request) {
 		writeAppConfig(cfg)
 	}
 
-	// e.g. https://github.com/apps/%s/installations/new
-	installURL := buildGitHubURL(fmt.Sprintf(servercfg.InstallPath, servercfg.GitHubAppsPrefix, appcfg.Slug), servercfg)
-	page := registeredCallbackPage{"GitHub App registered", code, installURL, appcfg, servercfg}
+	http.Redirect(w, r, "/", 302)
 
-	t := templates.Lookup("registered.html.tpl")
-	err = t.Execute(w, page)
 	if err != nil {
 		log.Println(err)
 	}
