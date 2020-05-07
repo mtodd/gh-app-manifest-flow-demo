@@ -11,16 +11,19 @@
 				{{ if .InstallationID }} and installed{{ end }}
 			</h1>
 			<div>
-				<div>Slug: <tt>{{ .Slug }}</tt></div>
-				<div>App ID: <tt>{{ .AppID }}</tt> (<tt>{{ .ID }}</tt>)</div>
-				<div>Secret: <tt>{{ .AppSecret }}</tt></div>
 				<div>
 					{{ if .InstallationID }}
 						Installation ID: <tt>{{ .InstallationID }}</tt>
 					{{ else }}
+						<h2>
+							Step 2: Install GitHub App <tt>{{ .Manifest.Name }}</tt>
+						</h2>
 						<a href="{{ .InstallURL }}" class="btn btn-outline">Install GitHub App</a>
 					{{ end }}
 				</div>
+				<div>Slug: <tt>{{ .Slug }}</tt></div>
+				<div>App ID: <tt>{{ .AppID }}</tt> (<tt>{{ .ID }}</tt>)</div>
+				<div>Secret: <tt>{{ .AppSecret }}</tt></div>
 				{{ if .AppAuthedJSON }}
 					<details>
 						<summary>Authenticating as GitHub App (<a href="https://developer.github.com/v3/apps/#get-the-authenticated-github-app">endpoint</a>)</summary>
@@ -45,12 +48,16 @@
 			</div>
 		{{ else }}
 			<h1>
-				Register GitHub App <tt>{{ .Manifest.Name }}</tt>
+				GitHub App <tt>{{ .Manifest.Name }}</tt> is not yet registered or installed
 			</h1>
-			<form action="{{ .CreateAppURL }}" method="post" target="_blank">
+			<h2>
+				Step 1: Register GitHub App <tt>{{ .Manifest.Name }}</tt>
+			</h2>
+			<form action="{{ .CreateAppURL }}" method="post">
 				<input type="hidden" name="redirect_url" value="{{ .Manifest.RedirectURL }}">
 				<button class="btn btn-outline" name="manifest" id="manifest" value="{{ .Manifest.FormValue }}">Register GitHub App</button>
 			</form>
+			<div>Step 2 will be to install the registered GitHub App.</div>
 		{{ end }}
 	</body>
 </html>
